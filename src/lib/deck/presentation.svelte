@@ -11,6 +11,8 @@
 	import Examplethree from './examplethree.svelte';
 	import Examplefour from './examplefour.svelte';
 	import Examplefive from './examplefive.svelte';
+	import Examplesix from './examplesix.svelte';
+	import Exampleseven from './exampleseven.svelte';
 </script>
 
 <Slide animate>
@@ -309,6 +311,7 @@
 			</scripts>
 			`}
 		</Code>
+		<Examplesix />
 	</Slide>
 	<Slide animate>
 		<p class="text-red-500">
@@ -329,6 +332,7 @@
 			</scripts>
 			`}
 		</Code>
+		<Exampleseven />
 	</Slide>
 </Slide>
 <Slide>
