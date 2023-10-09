@@ -111,13 +111,16 @@
 	<Slide animate>
 		<ul class="text-4xl">
 			<li>
-				Svelte is a new front-end, open source JavaScript framework for making interactive webpages.
-				It was developed by Rich Harris and released in 2016.
+				Svelte is a <span class="text-orange-600"
+					>new front-end, open source JavaScript framework
+				</span>for making interactive webpages. It was developed by
+				<span class="text-orange-600">Rich Harris </span> and released in 2016.
 			</li>
 			<br />
 			<li>
-				Svelte is a new front-end, open source JavaScript framework for making interactive webpages.
-				It was developed by Rich Harris and released in 2016.
+				It originated from <span class="text-orange-600">Ractive.js </span>and was designed to
+				succeed Ractive. The first version of Svelte was basically Ractive, but with a
+				<span class="text-orange-600">compiler</span>.
 			</li>
 		</ul>
 	</Slide>
@@ -129,7 +132,7 @@
 			<table class="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
 				<tr>
 					<th>Framework</th>
-					<th><p class="text-orange-600">Svelte</p></th>
+					<td><p class="text-orange-600 font-extrabold">Svelte</p></td>
 					<td><p class="text-sky-300">React</p></td>
 					<td><p class="text-red-500">Angular</p></td>
 				</tr>
@@ -431,9 +434,37 @@
 		><p class="text-6xl">
 			Use <span class="text-orange-600">Cases</span> and Real-world
 			<span class="text-orange-600">Examples</span>
-		</p></Slide
-	>
-	<Slide>Enter examples here.</Slide>
+		</p>
+	</Slide>
+	<Slide animate
+		><ul class="text-4xl">
+			<li>NBA</li>
+			<li>Apple</li>
+			<li>Yelp</li>
+			<li>New York Times</li>
+			<li>IKEA</li>
+			<li>Spotify</li>
+			<li>Square</li>
+			<li>Cloudflare</li>
+			<li>Brave</li>
+			<li>Decathlon</li>
+		</ul>
+	</Slide>
+	<Slide>
+		<p>Apple</p>
+		<p class="text-2xl">
+			Apple is using svelte for their Apple music beta website. The website cleverly employs a range
+			of Svelte features, including the 'svelte:head' element, which allows for customizing metatags
+			on different pages.
+		</p>
+		<div class="flex place-content-center">
+			<img
+				src="https://www.datocms-assets.com/86323/1686228470-apple-music-on-the-web-use-svelte.jpg?fm=webp&w=800"
+				alt="Apple"
+				class="scale-80"
+			/>
+		</div>
+	</Slide>
 </Slide>
 <Slide>
 	<Slide animate><p class="text-6xl">Pros of <span class="text-orange-600">Svelte</span></p></Slide>
@@ -920,6 +951,16 @@
 		</p></Slide
 	>
 </Slide>
+<Slide>
+	<Slide animate
+		><p class="text-6xl">
+			Special thanks to <span class="text-orange-600">Joy of Code</span> for the tutorial on creating
+			amazing slides using Svelte.
+		</p>
+		<a href="https://joyofcode.xyz/beautiful-presentations-with-svelte">Tutorial Link</a>
+	</Slide>
+</Slide>
+
 <!-- <Markdown>
 	{`
     ## Markdown
