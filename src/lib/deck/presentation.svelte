@@ -108,40 +108,14 @@
 	<Slide animate><p class="text-orange-600 text-6xl">Introduction to Svelte.js</p></Slide>
 	<Slide animate>
 		<ul class="text-4xl">
-			<li class="text-orange-600">
-				Svelte is a new front-end, open source JavaScript framework for making interactive webpages.
-				It was developed by Rich Harris and released in 2016.
-			</li>
-		</ul>
-	</Slide>
-	<Slide animate>
-		<ul class="text-4xl">
-			<li>
-				Svelte is a new front-end, open source JavaScript framework for making interactive webpages.
-				It was developed by Rich Harris and released in 2016.
-			</li>
-			<br />
-			<li class="text-orange-600">
-				It originated from Ractive.js and was designed to succeed Ractive. The first version of
-				Svelte was basically Ractive, but with a compiler.
-			</li>
-		</ul>
-	</Slide>
-	<Slide animate>
-		<ul class="text-4xl">
 			<li>
 				Svelte is a new front-end, open source JavaScript framework for making interactive webpages.
 				It was developed by Rich Harris and released in 2016.
 			</li>
 			<br />
 			<li>
-				It originated from Ractive.js and was designed to succeed Ractive. The first version of
-				Svelte was basically Ractive, but with a compiler.
-			</li>
-			<br />
-			<li class="text-orange-600">
-				It is a compiler that takes your declarative components and converts them into efficient
-				JavaScript that surgically updates the DOM.
+				Svelte is a new front-end, open source JavaScript framework for making interactive webpages.
+				It was developed by Rich Harris and released in 2016.
 			</li>
 		</ul>
 	</Slide>
@@ -154,112 +128,8 @@
 				<tr>
 					<th>Framework</th>
 					<th><p class="text-orange-600">Svelte</p></th>
-					<th><p class="text-sky-300" /></th>
-					<th><p class="text-red-500" /></th>
-				</tr>
-				<tr>
-					<th />
-					<td
-						>It complies the application code during the build process and eliminates the need for a
-						large runtime library.</td
-					>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<th>DOM</th>
-					<td>No Virtual DOM</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<th>Library Size</th>
-					<td>1.6 KB</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<th>Language</th>
-					<td>JavaScript, Typescript</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<th>Documentation</th>
-					<td>Moderate</td>
-					<td />
-					<td />
-				</tr>
-				<tr>
-					<th>Learning Curve</th>
-					<td>Easy</td>
-					<td />
-					<td />
-				</tr>
-			</table>
-		</div>
-	</Slide>
-	<Slide animate>
-		<div>
-			<table class="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-				<tr>
-					<th>Framework</th>
-					<th><p class="text-orange-600">Svelte</p></th>
-					<th><p class="text-sky-300">React</p></th>
-				</tr>
-
-				<th />
-				<td
-					>It complies the application code during the build process and eliminates the need for a
-					large runtime library.</td
-				>
-				<td
-					>Stronger emphasis on runtime efficiency, using a virtual DOM and reconciliation algorithm
-					for updates.</td
-				>
-				<td />
-				<tr />
-				<tr>
-					<th>DOM</th>
-					<td>No Virtual DOM</td>
-					<td>Virtual DOM</td>
-					<td />
-				</tr>
-				<tr>
-					<th>Library Size</th>
-					<td>1.6 KB</td>
-					<td>42.2 KB</td>
-					<td />
-				</tr>
-				<tr>
-					<th>Language</th>
-					<td>JavaScript, Typescript</td>
-					<td>JavaScript, TypesScript, JSX</td>
-					<td />
-				</tr>
-				<tr>
-					<th>Documentation</th>
-					<td>Moderate</td>
-					<td>Poor</td>
-					<td />
-				</tr>
-				<tr>
-					<th>Learning Curve</th>
-					<td>Easy</td>
-					<td>Gradual</td>
-					<td />
-				</tr>
-			</table>
-		</div>
-	</Slide>
-	<Slide animate>
-		<div>
-			<table class="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-				<tr>
-					<th>Framework</th>
-					<th><p class="text-orange-600">Svelte</p></th>
-					<th><p class="text-sky-300">React</p></th>
-					<th><p class="text-red-500">Angular</p></th>
+					<td><p class="text-sky-300">React</p></td>
+					<td><p class="text-red-500">Angular</p></td>
 				</tr>
 				<tr>
 					<th />
@@ -289,9 +159,9 @@
 				</tr>
 				<tr>
 					<th>Language</th>
-					<td>JavaScript, Typescript</td>
+					<td>JavaScript, TypeScript</td>
 					<td>JavaScript, TypesScript, JSX</td>
-					<td>Typescript</td>
+					<td>TypeCcript</td>
 				</tr>
 				<tr>
 					<th>Documentation</th>
@@ -311,66 +181,69 @@
 </Slide>
 <Slide>
 	<Slide animate><p class="text-orange-600 text-6xl">How Svelte Differs By Code Size</p></Slide>
-	<Slide animate><p class="text-6xl">Hello World</p></Slide>
-	<Slide animate>
-		<p class="text-sky-300">React</p>
-		<Code id="code" lines>
-			{`
-            import React from 'react';
-            
-            function App() {
-                return (
-                    <div>
-                        Hello World
-                    </div>
-                );
-            }
-        `}
-		</Code>
-	</Slide>
-	<Slide animate>
-		<p class="text-red-500">Angular</p>
-		<Code id="code" lines>
-			{`
-            import { Component } from '@angular/core';
-            
-            @Component ({
-                selector: 'my-app',
-                template: '<h1>Hello World</h1>'
-            })
-
-            export class AppComponent;
-        `}
-		</Code>
-	</Slide>
-	<Slide animate>
-		<p class="text-orange-600">Svelte</p>
-		<Code id="code" lines>
-			{`
-            <h1>Hello World</h1>
-        `}
-		</Code>
+	<Slide>
+		<div class="flex gap-1 place-content-center">
+			<div>
+				<p class="text-orange-600">Svelte</p>
+				<Code id="code" lines>
+					{`
+                    <h1>Hello World</h1>
+                `}
+				</Code>
+			</div>
+			<div>
+				<p class="text-sky-300">React</p>
+				<Code id="code" lines>
+					{`
+                    import React from 'react';
+                    
+                    function App() {
+                        return (
+                            <div>
+                                Hello World
+                            </div>
+                        );
+                    }
+                `}
+				</Code>
+			</div>
+			<div>
+				<p class="text-red-500">Angular</p>
+				<Code id="code" lines>
+					{`
+                    import { Component } from '@angular/core';
+                    
+                    @Component ({
+                        selector: 'my-app',
+                        template: '<h1>Hello World</h1>'
+                    })
+        
+                    export class AppComponent;
+                `}
+				</Code>
+			</div>
+		</div>
 	</Slide>
 </Slide>
 <Slide>
-	<Slide animate><p class="text-orange-600 text-6xl">Execution Speed</p></Slide>
 	<Slide>
+		<p class="text-orange-600 text-6xl">Execution Speed</p>
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-vs-angular-vs-react@2x.webp"
 			alt="Execution Speed"
 			class="scale-125"
 		/>
 	</Slide>
-	<Slide animate><p class="text-orange-600 text-6xl">Startup Test</p></Slide>
 	<Slide>
+		<p class="text-orange-600 text-6xl">Startup Test</p>
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-vs-react-vs-angular@2x.webp"
 			alt="Startup Test"
 			class="scale-125"
 		/>
 	</Slide>
-	<Slide animate><p class="text-orange-600 text-6xl">Memory Allocation Test</p></Slide>
 	<Slide>
+		<p class="text-orange-600 text-6xl">Memory Allocation Test</p>
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-and-react@2x.webp"
 			alt="Memory Allocation Test"
@@ -421,7 +294,7 @@
 		</p></Slide
 	>
 	<Slide animate>
-		<p class="text-red-500">Reactive declarations use use <span class="text-orange-600">$</span></p>
+		<p class="text-red-500">Reactive declarations use <span class="text-orange-600">$</span></p>
 		<Code id="code" lines>
 			{`
 			<scripts>
