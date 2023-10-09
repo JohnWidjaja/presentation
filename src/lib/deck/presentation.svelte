@@ -7,6 +7,10 @@
 	import Rightarrow from '$lib/icons/rightarrow.svelte';
 	import Domicon from '$lib/icons/domicon.svelte';
 	import Exampleone from './exampleone.svelte';
+	import Exampletwo from './exampletwo.svelte';
+	import Examplethree from './examplethree.svelte';
+	import Examplefour from './examplefour.svelte';
+	import Examplefive from './examplefive.svelte';
 </script>
 
 <Slide animate>
@@ -54,6 +58,25 @@
 			<li>Introduction to Svelte.js</li>
 			<li>How Svelte Differs from Other Frameworks</li>
 			<li>Key Features of Svelte</li>
+			<li class="text-orange-600">Use Cases and Real-world Examples</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Introduction to Svelte.js</li>
+			<li>How Svelte Differs from Other Frameworks</li>
+			<li>Key Features of Svelte</li>
+			<li>Use Cases and Real-world Examples</li>
+			<li class="text-orange-600">Pros and Cons of Svelte</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Introduction to Svelte.js</li>
+			<li>How Svelte Differs from Other Frameworks</li>
+			<li>Key Features of Svelte</li>
+			<li>Use Cases and Real-world Examples</li>
+			<li>Pros and Cons of Svelte</li>
 			<li class="text-orange-600">Building A Simple Svelte Application</li>
 		</ul>
 	</Slide>
@@ -62,6 +85,8 @@
 			<li>Introduction to Svelte.js</li>
 			<li>How Svelte Differs from Other Frameworks</li>
 			<li>Key Features of Svelte</li>
+			<li>Use Cases and Real-world Examples</li>
+			<li>Pros and Cons of Svelte</li>
 			<li>Building A Simple Svelte Application</li>
 			<li class="text-orange-600">Svelte Ecosystem and Community</li>
 		</ul>
@@ -71,44 +96,10 @@
 			<li>Introduction to Svelte.js</li>
 			<li>How Svelte Differs from Other Frameworks</li>
 			<li>Key Features of Svelte</li>
-			<li>Building A Simple Svelte Application</li>
-			<li>Svelte Ecosystem and Community</li>
-			<li class="text-orange-600">Pros and Cons of Svelte</li>
-		</ul>
-	</Slide>
-	<Slide animate
-		><ul>
-			<li>Introduction to Svelte.js</li>
-			<li>How Svelte Differs from Other Frameworks</li>
-			<li>Key Features of Svelte</li>
-			<li>Building A Simple Svelte Application</li>
-			<li>Svelte Ecosystem and Community</li>
-			<li>Pros and Cons of Svelte</li>
-			<li class="text-orange-600">A brief introduction to SvelteKit</li>
-		</ul>
-	</Slide>
-	<Slide animate
-		><ul>
-			<li>Introduction to Svelte.js</li>
-			<li>How Svelte Differs from Other Frameworks</li>
-			<li>Key Features of Svelte</li>
-			<li>Building A Simple Svelte Application</li>
-			<li>Svelte Ecosystem and Community</li>
-			<li>Pros and Cons of Svelte</li>
-			<li>A brief introduction to SvelteKit</li>
-			<li class="text-orange-600">Use Cases and Real-world Examples</li>
-		</ul>
-	</Slide>
-	<Slide animate
-		><ul>
-			<li>Introduction to Svelte.js</li>
-			<li>How Svelte Differs from Other Frameworks</li>
-			<li>Key Features of Svelte</li>
-			<li>Building A Simple Svelte Application</li>
-			<li>Svelte Ecosystem and Community</li>
-			<li>Pros and Cons of Svelte</li>
-			<li>A brief introduction to SvelteKit</li>
 			<li>Use Cases and Real-world Examples</li>
+			<li>Pros and Cons of Svelte</li>
+			<li>Building A Simple Svelte Application</li>
+			<li>Svelte Ecosystem and Community</li>
 			<li class="text-orange-600">Conclusion and Q&A</li>
 		</ul>
 	</Slide>
@@ -383,8 +374,22 @@
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-and-react@2x.webp"
 			alt="Memory Allocation Test"
-			class="scale-125"
+			class="scale-100"
 		/>
+		<table class="w-full text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+			<tr>
+				<td />
+				<th><span class="text-orange-600">Svelte</span></th>
+				<th><span class="text-sky-300">React</span></th>
+				<th><span class="text-red-500">Angular</span></th>
+			</tr>
+			<tr>
+				<th>Performance</th>
+				<td>Most performant/faster load times</td>
+				<td>Averagely performant</td>
+				<td>Least performant</td>
+			</tr>
+		</table>
 	</Slide>
 </Slide>
 <Slide>
@@ -431,7 +436,7 @@
 	</Slide>
 	<Slide animate>
 		<p class="text-red-500">
-			RRunning arbitrary statements <span class="text-orange-600">reactively</span>
+			Running arbitrary statements <span class="text-orange-600">reactively</span>
 		</p>
 		<Code id="code" lines>
 			{`
@@ -469,7 +474,76 @@
 			sizes, making it a compelling choice for modern web development.
 		</p>
 	</Slide>
-	<Slide>t</Slide>
+	<Slide
+		><p>
+			Key Aspects of the Zero-runtime philosophy in <span class="text-orange-600">Svelte</span>
+		</p></Slide
+	>
+	<Slide animate
+		><ul>
+			<li class="text-orange-600">Compile-time Components</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Compile-time Components</li>
+			<li class="text-orange-600">No Virtual DOM</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Compile-time Components</li>
+			<li>No Virtual DOM</li>
+			<li class="text-orange-600">Small Bundle Sizes</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Compile-time Components</li>
+			<li>No Virtual DOM</li>
+			<li>Small Bundle Sizes</li>
+			<li class="text-orange-600">Faster Execution</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Compile-time Components</li>
+			<li>No Virtual DOM</li>
+			<li>Small Bundle Sizes</li>
+			<li>Faster Execution</li>
+			<li class="text-orange-600">Reactive Declarations</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Compile-time Components</li>
+			<li>No Virtual DOM</li>
+			<li>Small Bundle Sizes</li>
+			<li>Faster Execution</li>
+			<li>Reactive Declarations</li>
+			<li class="text-orange-600">Event Delegation</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Compile-time Components</li>
+			<li>No Virtual DOM</li>
+			<li>Small Bundle Sizes</li>
+			<li>Faster Execution</li>
+			<li>Reactive Declarations</li>
+			<li>Event Delegation</li>
+			<li class="text-orange-600">Animation Support</li>
+		</ul>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate
+		><p class="text-6xl">
+			Use <span class="text-orange-600">Cases</span> and Real-world
+			<span class="text-orange-600">Examples</span>
+		</p></Slide
+	>
+	<Slide>Enter examples here.</Slide>
 </Slide>
 <Slide>
 	<Slide animate><p class="text-6xl">Pros of <span class="text-orange-600">Svelte</span></p></Slide>
@@ -481,14 +555,22 @@
 	<Slide animate
 		><ul>
 			<li>No Virtual DOM</li>
+			<li class="text-orange-600">Easy to Learn</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>No Virtual DOM</li>
+			<li>Easy to Learn</li>
 			<li class="text-orange-600">Less Code Needed</li>
 		</ul>
 	</Slide>
 	<Slide animate
 		><ul>
 			<li>No Virtual DOM</li>
+			<li>Easy to Learn</li>
 			<li>Less Code Needed</li>
-			<li class="text-orange-600">Easy to Learn</li>
+			<li class="text-orange-600">Reactive by Default</li>
 		</ul>
 	</Slide>
 </Slide>
@@ -569,12 +651,24 @@
 		</div>
 	</Slide>
 	<Slide id="boxes" animate>
-		<div class="flex place-content-center">
+		<div class="flex gap-2 place-content-center">
 			<div
 				data-id="box-1"
-				class="w-[300px] h-[300px] bg-red-500 flex items-center justify-center rounded-lg"
+				class="w-[300px] h-[100px] bg-red-500 rounded-lg flex items-center justify-center"
 			>
-				Into Ideal JavaScript Code
+				Ideal
+			</div>
+			<div
+				data-id="box-2"
+				class="w-[300px] h-[100px] bg-red-500 rounded-lg flex items-center justify-center"
+			>
+				JavaScript
+			</div>
+			<div
+				data-id="box-3"
+				class="w-[300px] h-[100px] bg-red-500 rounded-lg flex items-center justify-center"
+			>
+				Code
 			</div>
 		</div>
 	</Slide>
@@ -629,7 +723,7 @@
 					return {
 						c() {
 							h1 = element("h1");
-							h1.textContent = 'Hello ${name}!';
+							h1.textContent = 'Hello '${name}!';
 							set_style(h1, "color", "red");
 						},
 						m(target, anchor) {
@@ -662,8 +756,279 @@
 	</Slide>
 </Slide>
 <Slide>
+	<Slide animate><p class="text-6xl">Easy to <span class="text-orange-600">Learn</span></p></Slide>
+	<Slide animate
+		><ul>
+			<li class="text-orange-600">You only need vanilla <span class="text-red-500">HTML</span></li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>You only need vanilla <span class="text-red-500">HTML</span></li>
+			<li class="text-orange-600">You only need vanilla <span class="text-blue-500">CSS</span></li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>You only need vanilla <span class="text-red-500">HTML</span></li>
+			<li>You only need vanilla <span class="text-blue-500">CSS</span></li>
+			<li class="text-orange-600">
+				You only need vanilla <span class="text-yellow-500">JavaScript</span>
+			</li>
+		</ul>
+	</Slide>
+	<Slide
+		><p>
+			<a href="https://svelte.dev/"><span class="text-orange-600">Svelte's</span></a> documentation is
+			strong and provides learners a strong foundation using their built-in tutorial.
+		</p></Slide
+	>
+	<Slide>
+		<img src="https://i.imgur.com/yvcTerN.png" alt="Svelte Tutorial" class="scale-125" />
+	</Slide>
+	<Slide animate>
+		<p>String Interpolation</p>
+		<br />
+		<Code id="code" lines>
+			{`
+			<scripts>
+				let name = 'world';
+			</scripts>
+
+			<h1 style="color:red">Hello {name}!</h1>
+        `}
+		</Code>
+		<p class="text-red-500">Hello World</p>
+	</Slide>
+	<Slide animate>
+		<p>Event Binding</p>
+		<br />
+		<Code id="code" lines>
+			{`
+			<scripts>
+				let name = 'Bob';
+			</scripts>
+            <label>
+                <input type="text" bind:value={name}>
+            </label><p>{name}</p>    
+        `}
+		</Code>
+		<Exampletwo />
+	</Slide>
+	<Slide animate>
+		<p>Looping</p>
+		<br />
+		<Code id="code" lines>
+			{`
+            <scripts>
+                let data = [
+                    { id: '1', name: 'John' },
+                    { id: '2', name: 'Zuka' },
+                    { id: '3', name: 'Shang' },
+                    { id: '4', name: 'Joy' }
+                ];
+            </scripts>
+
+            <ul>
+                {#each data as { id, name }, i}
+                    <li>My name is {name} with {id}</li>
+                {/each}
+            </ul>
+        `}
+		</Code>
+	</Slide>
+	<Slide>
+		<Examplethree />
+	</Slide>
+</Slide>
+<Slide>
 	<Slide animate><p class="text-6xl">Less <span class="text-orange-600">Code</span></p></Slide>
 	<Slide><Exampleone /></Slide>
+	<Slide animate>
+		<p class="text-6xl">Code in <span class="text-orange-600">Svelte</span></p>
+		<Code id="code" lines>
+			{`
+            <scripts>
+                let a = 1;
+                let b = 2;
+            </scripts>
+
+            <input type="number" bind:value={a} />
+            <input type="number" bind:value={b} />
+
+            <p>{a} + {b} = {a + b}</p>
+        `}
+		</Code>
+	</Slide>
+	<Slide animate>
+		<p class="text-6xl">Code in <span class="text-sky-300">React</span></p>
+		<Code id="code" lines>
+			{`
+                import { useState } from 'react';
+
+                export default () => {
+                const [a, setA] = useState(1);
+                const [b, setB] = useState(2);
+
+                function handleChange (event, setValue) {
+                    const { value } = event.target;
+                    setValue(value);
+                };
+
+                return (
+                    <div>
+                    <input type="number" value={a} onChange={(e) => handleChange(e, setA)} />
+                    <input type="number" value={b} onChange={(e) => handleChange(e, setB)} />
+                    <p>{a} + {b} = { parseInt(a) + parseInt(b) } </p>
+                    </div>
+                );
+                }
+        `}
+		</Code>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate
+		><p class="text-6xl">Reactive by <span class="text-orange-600">Default</span></p></Slide
+	>
+	<Slide animate>
+		<p>A Click Button</p>
+		<Code id="code" lines>
+			{`
+                <scripts>
+                let count = 0;
+
+                function handleClick() {
+                    count += 1;
+                }
+                </scripts>
+
+                <button on:click={handleClick}>
+                Clicked {count} {count === 1 ? 'time' : 'times'}
+                </button>
+        `}
+		</Code>
+		<Examplefour />
+	</Slide>
+	<Slide animate>
+		<p>Conditional Rendering</p>
+		<Code id="code" lines>
+			{`
+                <scripts>
+                let x = 7;
+                </scripts>
+
+                <input type="number" bind:value={x} />
+
+                {#if x > 10}
+                <p>{x} is greater than 10</p>
+                {:else if x < 5}
+                <p>{x} is less than 5</p>
+                {:else}
+                <p>{x} is between 5 and 10</p>
+                {/if}
+        `}
+		</Code>
+		<Examplefive />
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate><p class="text-6xl">Cons of <span class="text-orange-600">Svelte</span></p></Slide>
+	<Slide animate
+		><ul>
+			<li class="text-orange-600">Smaller Ecosystem</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Smaller Ecosystem</li>
+			<li class="text-orange-600">Lack of IDE Support</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Smaller Ecosystem</li>
+			<li>Lack of IDE Support</li>
+			<li class="text-orange-600">Lack of Dev Tools</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Smaller Ecosystem</li>
+			<li>Lack of IDE Support</li>
+			<li>Lack of Dev Tools</li>
+			<li class="text-orange-600">Smaller Community</li>
+		</ul>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate
+		><p class="text-6xl">
+			Building a Simple <span class="text-orange-600">Svelte</span> Application
+		</p></Slide
+	>
+</Slide>
+<Slide>
+	<Slide animate
+		><p class="text-6xl">
+			<span class="text-orange-600">Svelte</span> Ecosytem and Community
+		</p></Slide
+	>
+	<Slide animate>
+		<p class="text-6xl">
+			<span>Libraries and Tools</span>
+		</p>
+	</Slide>
+	<Slide animate>
+		<p class="text-6xl">
+			<span>Libraries and Tools</span>
+		</p>
+		<br />
+		<ul>
+			<li class="text-orange-600">SvelteKit</li>
+		</ul>
+	</Slide>
+	<Slide animate>
+		<p class="text-6xl">
+			<span>Libraries and Tools</span>
+		</p>
+		<br />
+		<ul>
+			<li>SvelteKit</li>
+			<li class="text-orange-600">Sapper</li>
+		</ul>
+	</Slide>
+	<Slide animate>
+		<p class="text-6xl">
+			<span>Community and Documentation</span>
+		</p>
+	</Slide>
+	<Slide animate>
+		<p class="text-6xl">
+			<span>Community and Documentation</span>
+		</p>
+		<br />
+		<ul>
+			<li class="text-orange-600">Svelte Society</li>
+		</ul>
+	</Slide>
+	<Slide animate>
+		<p class="text-6xl">
+			<span>Community and Documentation</span>
+		</p>
+		<br />
+		<ul>
+			<li>Svelte Society</li>
+			<li class="text-orange-600">Stack Overflow</li>
+		</ul>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate
+		><p class="text-6xl">
+			Conclusion and <span class="text-orange-600">Q&A</span>
+		</p></Slide
+	>
 </Slide>
 <!-- <Markdown>
 	{`
