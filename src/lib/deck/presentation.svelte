@@ -227,23 +227,23 @@
 </Slide>
 <Slide>
 	<Slide>
-		<p class="text-orange-600 text-6xl">Execution Speed</p>
+		<p class="text-orange-600 text-4xl">Execution Speed</p>
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-vs-angular-vs-react@2x.webp"
 			alt="Execution Speed"
-			class="scale-125"
+			class="scale-100"
 		/>
 	</Slide>
 	<Slide>
-		<p class="text-orange-600 text-6xl">Startup Test</p>
+		<p class="text-orange-600 text-4xl">Startup Test</p>
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-vs-react-vs-angular@2x.webp"
 			alt="Startup Test"
-			class="scale-125"
+			class="scale-100"
 		/>
 	</Slide>
 	<Slide>
-		<p class="text-orange-600 text-6xl">Memory Allocation Test</p>
+		<p class="text-orange-600 text-2xl">Memory Allocation Test</p>
 		<img
 			src="https://www.softermii.com/assets/uploads/blog/20221014/svelte-and-react@2x.webp"
 			alt="Memory Allocation Test"
@@ -263,6 +263,9 @@
 				<td>Least performant</td>
 			</tr>
 		</table>
+		<a class="text-xl" href="https://www.stefankrause.net/wp/"
+			>Link: JavaScript Framework Benchmark Tool</a
+		>
 	</Slide>
 </Slide>
 <Slide>
