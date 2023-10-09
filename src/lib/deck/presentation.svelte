@@ -303,11 +303,9 @@
 		<Code id="code" lines>
 			{`
             <scripts>
-                let count = 1; // the '$:'' means 're-run whenever these values change'
-
+                let count = 1;
                 $: doubled = count * 2;
                 $: quadrupled = doubled * 2;
-
                 function handleClick() {
                     count += 1;
                 }
@@ -316,7 +314,6 @@
             <button on:click={handleClick}>
                 Count: {count}
             </button>
-
             <p>{count} * 2 = {doubled}</p>
             <p>{doubled} * 2 = {quadrupled}</p>
 			`}
@@ -331,17 +328,14 @@
 			{`
                 <scripts>
                     let count = 0;
-
                     $: if (count >= 10) {
                         alert('count is dangerously high!');
                         count = 0;
                     }
-
                     function handleClick() {
                         count += 1;
                     }
                 </scripts>
-
                 <button on:click={handleClick}>
                     Clicked {count}
                     {count === 1 ? 'time' : 'times'}
