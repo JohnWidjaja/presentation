@@ -4,9 +4,9 @@
 	import Slides from './slides.svelte';
 	import Markdown from './markdown.svelte';
 	import Icon from './icon.svelte';
-	import Js from '$lib/icons/js.svelte';
-	import Cssicon from '$lib/icons/cssicon.svelte';
-	import Html from '$lib/icons/html.svelte';
+	import Rightarrow from '$lib/icons/rightarrow.svelte';
+	import Domicon from '$lib/icons/domicon.svelte';
+	import Exampleone from './exampleone.svelte';
 </script>
 
 <Slide animate>
@@ -388,6 +388,90 @@
 	</Slide>
 </Slide>
 <Slide>
+	<Slide animate
+		><p class="text-6xl">Key Features of <span class="text-orange-600">Svelte</span></p></Slide
+	>
+	<Slide animate
+		><ul>
+			<li class="text-orange-600">Reactive Programming Model</li>
+		</ul>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Reactive Programming Model</li>
+			<li class="text-orange-600">Zero-runtime Philosophy</li>
+		</ul>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate
+		><ul>
+			<li class="text-orange-600">Reactive Programming Model</li>
+		</ul>
+	</Slide>
+	<Slide
+		><p>
+			Svelte's Reactive programming model enables automatic updates to the user interface based on
+			changes in data without the developer having to write explicit update code.
+		</p></Slide
+	>
+	<Slide animate>
+		<p class="text-red-500">Reactive declarations use use <span class="text-orange-600">$</span></p>
+		<Code id="code" lines>
+			{`
+			<scripts>
+				let count = 0;​
+				$: doubled = count * 2;​
+				function increment() {​
+				count += 1;​
+				}​
+			</scripts>
+			`}
+		</Code>
+	</Slide>
+	<Slide animate>
+		<p class="text-red-500">
+			RRunning arbitrary statements <span class="text-orange-600">reactively</span>
+		</p>
+		<Code id="code" lines>
+			{`
+			<scripts>​
+				let count = 0;​
+				$: if (count >= 10) {​
+				alert('count is dangerously high!');​
+				count = 0;​
+				}​
+
+				function handleClick() {​
+				count += 1;​
+				}​
+			</scripts>
+			`}
+		</Code>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide>
+		<p>
+			Zero-runtime <span class="text-orange-600">Philosophy</span>
+		</p>
+	</Slide>
+	<Slide>
+		<p>
+			The Zero-runtime philosophy in Svelte revolves around the idea of shifting as much work as
+			possible from the client-side runtime to compile-time, maximizing performance and minimizing
+			the amount of JavaScript that needs to run in the browser to power a web application.
+		</p>
+	</Slide>
+	<Slide>
+		<p>
+			This approach led to the creation of fast and efficient web applications with smaller bundle
+			sizes, making it a compelling choice for modern web development.
+		</p>
+	</Slide>
+	<Slide>t</Slide>
+</Slide>
+<Slide>
 	<Slide animate><p class="text-6xl">Pros of <span class="text-orange-600">Svelte</span></p></Slide>
 	<Slide animate
 		><ul>
@@ -405,14 +489,6 @@
 			<li>No Virtual DOM</li>
 			<li>Less Code Needed</li>
 			<li class="text-orange-600">Easy to Learn</li>
-		</ul>
-	</Slide>
-	<Slide animate
-		><ul>
-			<li>No Virtual DOM</li>
-			<li>Less Code Needed</li>
-			<li>Easy to Learn</li>
-			<li class="text-orange-600">Reactive by Default</li>
 		</ul>
 	</Slide>
 </Slide>
@@ -433,24 +509,30 @@
 	<Slide id="boxes" animate>
 		<p class="capitalize">Svelte Components</p>
 		<div class="flex gap-2 place-content-center">
-			<div data-id="box-1" class="w-[100px] h-[100px] bg-gray-400" />
-			<div data-id="box-2" class="w-[100px] h-[100px] bg-gray-400" />
-			<div data-id="box-3" class="w-[100px] h-[100px] bg-gray-400" />
+			<div data-id="box-1" class="w-[50px] h-[50px] bg-gray-400 rounded-lg" />
+			<div data-id="box-2" class="w-[50px] h-[50px] bg-gray-400 rounded-lg" />
+			<div data-id="box-3" class="w-[50px] h-[50px] bg-gray-400 rounded-lg" />
 		</div>
 	</Slide>
 
 	<Slide id="boxes" animate>
 		<p class="capitalize">Consists of</p>
 		<div class="flex gap-2 place-content-center">
-			<div data-id="box-1" class="w-[200px] h-[200px] bg-red-500 flex items-center justify-center">
+			<div
+				data-id="box-1"
+				class="w-[200px] h-[200px] bg-red-500 flex items-center justify-center rounded-lg"
+			>
 				HTML
 			</div>
-			<div data-id="box-2" class="w-[200px] h-[200px] bg-blue-500 flex items-center justify-center">
+			<div
+				data-id="box-2"
+				class="w-[200px] h-[200px] bg-blue-500 flex items-center justify-center rounded-lg"
+			>
 				CSS
 			</div>
 			<div
 				data-id="box-3"
-				class="w-[200px] h-[200px] bg-yellow-500 flex items-center justify-center"
+				class="w-[200px] h-[200px] bg-yellow-500 flex items-center justify-center rounded-lg"
 			>
 				JS
 			</div>
@@ -458,20 +540,130 @@
 		<p class="capitalize">Three elements</p>
 	</Slide>
 	<Slide id="boxes" animate>
-		<div class="flex place-content-center">
-			<div data-id="box-1" class="w-[300px] h-[300px] bg-red-500 flex items-center justify-center">
-				Components
+		<div class="r-stack flex place-content-center">
+			<div
+				data-id="box-1"
+				class="w-[300px] h-[300px] bg-red-500 flex items-center justify-center rounded-full"
+			/>
+
+			<div
+				data-id="box-2"
+				class="w-[200px] h-[200px] bg-red-500 flex items-center justify-center rounded-full"
+			/>
+			<div
+				data-id="box-3"
+				class="w-[100px] h-[100px] bg-red-500 flex items-center justify-center rounded-full"
+			>
+				Component
 			</div>
-			<div
-				data-id="box-1"
-				class="w-[200px] h-[200px] bg-red-500 flex items-center justify-center"
-			/>
-			<div
-				data-id="box-1"
-				class="w-[100px] h-[100px] bg-red-500 flex items-center justify-center"
-			/>
 		</div>
 	</Slide>
+	<Slide id="boxes" animate>
+		<div class="flex place-content-center">
+			<div
+				data-id="box-1"
+				class="w-[200px] h-[200px] bg-red-500 flex items-center justify-center rounded-lg"
+			>
+				Complies
+			</div>
+		</div>
+	</Slide>
+	<Slide id="boxes" animate>
+		<div class="flex place-content-center">
+			<div
+				data-id="box-1"
+				class="w-[300px] h-[300px] bg-red-500 flex items-center justify-center rounded-lg"
+			>
+				Into Ideal JavaScript Code
+			</div>
+		</div>
+	</Slide>
+	<Slide animate>
+		<div class="flex place-content-center">
+			<div class="h-[200px] w-[200px]">
+				<Rightarrow />
+			</div>
+		</div>
+	</Slide>
+	<Slide animate>
+		<div class="items-center justify-center">
+			<p>Updates Browser DOM</p>
+		</div>
+		<div class="flex place-content-center">
+			<div class="h-[200px] w-[200px]">
+				<Domicon />
+			</div>
+		</div>
+	</Slide>
+	<Slide animate>
+		<p class="text-red-500">Hello World</p>
+		<Code id="code" lines>
+			{`
+			<scripts>
+				let name = 'world';
+			</scripts>
+
+			<h1 style="color:red">Hello {name}!</h1>
+        `}
+		</Code>
+	</Slide>
+	<Slide animate>
+		<Code id="code" lines>
+			{`
+				import {
+					SvelteComponent,
+					detach,
+					element,
+					init,
+					insert,
+					noop,
+					safe_not_equal,
+					set_style
+				} from "svelte/internal";
+
+				import "svelte/internal/disclose-version";
+
+				function create_fragment(ctx) {
+					let h1;
+
+					return {
+						c() {
+							h1 = element("h1");
+							h1.textContent = 'Hello ${name}!';
+							set_style(h1, "color", "red");
+						},
+						m(target, anchor) {
+							insert(target, h1, anchor);
+						},
+						p: noop,
+						i: noop,
+						o: noop,
+						d(detaching) {
+							if (detaching) {
+								detach(h1);
+							}
+						}
+					};
+				}
+
+				let name = 'world';
+
+				class App extends SvelteComponent {
+					constructor(options) {
+						super();
+						init(this, options, null, create_fragment, safe_not_equal, {});
+					}
+				}
+
+				export default App;
+				
+			`}
+		</Code>
+	</Slide>
+</Slide>
+<Slide>
+	<Slide animate><p class="text-6xl">Less <span class="text-orange-600">Code</span></p></Slide>
+	<Slide><Exampleone /></Slide>
 </Slide>
 <!-- <Markdown>
 	{`
