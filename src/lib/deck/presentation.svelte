@@ -302,13 +302,23 @@
 		<p class="text-red-500">Reactive declarations use <span class="text-orange-600">$</span></p>
 		<Code id="code" lines>
 			{`
-			<scripts>
-				let count = 0;​
-				$: doubled = count * 2;​
-				function increment() {​
-				count += 1;​
-				}​
-			</scripts>
+            <scripts>
+                let count = 1; // the '$:'' means 're-run whenever these values change'
+
+                $: doubled = count * 2;
+                $: quadrupled = doubled * 2;
+
+                function handleClick() {
+                    count += 1;
+                }
+            </scripts>
+
+            <button on:click={handleClick}>
+                Count: {count}
+            </button>
+
+            <p>{count} * 2 = {doubled}</p>
+            <p>{doubled} * 2 = {quadrupled}</p>
 			`}
 		</Code>
 		<Examplesix />
@@ -319,17 +329,23 @@
 		</p>
 		<Code id="code" lines>
 			{`
-			<scripts>​
-				let count = 0;​
-				$: if (count >= 10) {​
-				alert('count is dangerously high!');​
-				count = 0;​
-				}​
+                <scripts>
+                    let count = 0;
 
-				function handleClick() {​
-				count += 1;​
-				}​
-			</scripts>
+                    $: if (count >= 10) {
+                        alert('count is dangerously high!');
+                        count = 0;
+                    }
+
+                    function handleClick() {
+                        count += 1;
+                    }
+                </scripts>
+
+                <button on:click={handleClick}>
+                    Clicked {count}
+                    {count === 1 ? 'time' : 'times'}
+                </button>
 			`}
 		</Code>
 		<Exampleseven />
