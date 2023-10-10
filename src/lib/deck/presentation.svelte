@@ -13,6 +13,7 @@
 	import Examplefive from './examplefive.svelte';
 	import Examplesix from './examplesix.svelte';
 	import Exampleseven from './exampleseven.svelte';
+	import Notes from './notes.svelte';
 </script>
 
 <Slide animate>
@@ -508,6 +509,70 @@
 	<Slide>
 		During the build, a virtual DOM is not needed. This results in faster performance and smaller
 		bundle sizes.
+		<Notes
+			>The faster performance and smaller bundle sizes is due to the fact that Svelte knows which
+			part of the code is static and dynamic during the build process, which it then eliminates
+			unnessary runetime code.</Notes
+		>
+	</Slide>
+	<Slide animate
+		><p class="text-5xl">
+			Component-based <span class="text-orange-600">Architecture</span>
+		</p></Slide
+	>
+	<Slide animate
+		><ul>
+			<li class="text-orange-600">Components</li>
+		</ul>
+		<Notes
+			>A self-contained unit of code that encapsulates a specific piece of the user interface and
+			its behavior.
+		</Notes>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Components</li>
+			<li class="text-orange-600">Reusability</li>
+		</ul>
+		<Notes
+			>You can create a component once and then use it multiple times throughout your application.
+			This promotes code reusability and maintainability.</Notes
+		>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Components</li>
+			<li>Reusability</li>
+			<li class="text-orange-600">Encapsulation</li>
+		</ul>
+		<Notes
+			>Ensures that the logic and styles within a component do not interfere with or affect other
+			parts of the application.</Notes
+		>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Components</li>
+			<li>Reusability</li>
+			<li>Encapsulation</li>
+			<li class="text-orange-600">Composition</li>
+		</ul>
+		<Notes
+			>You can nest components inside one another, building a more complex user interface.</Notes
+		>
+	</Slide>
+	<Slide animate
+		><ul>
+			<li>Components</li>
+			<li>Reusability</li>
+			<li>Encapsulation</li>
+			<li>Composition</li>
+			<li class="text-orange-600">Props</li>
+		</ul>
+		<Notes
+			>Props are values passed to a component from its parent component. These props allow you to
+			customize and configure the behavior and appearance of a component.</Notes
+		>
 	</Slide>
 	<Slide id="boxes" animate>
 		<p class="capitalize">Svelte Components</p>
@@ -516,10 +581,11 @@
 			<div data-id="box-2" class="w-[50px] h-[50px] bg-gray-400 rounded-lg" />
 			<div data-id="box-3" class="w-[50px] h-[50px] bg-gray-400 rounded-lg" />
 		</div>
+		<Notes>Components are like functions, they are a reusable self-contained block of code.</Notes>
 	</Slide>
 
 	<Slide id="boxes" animate>
-		<p class="capitalize">Consists of</p>
+		<p class="capitalize">Encapsulates</p>
 		<div class="flex gap-2 place-content-center">
 			<div
 				data-id="box-1"
@@ -540,7 +606,7 @@
 				JS
 			</div>
 		</div>
-		<p class="capitalize">Three elements</p>
+		<p class="capitalize">Three optional elements</p>
 	</Slide>
 	<Slide id="boxes" animate>
 		<div class="r-stack flex place-content-center">
@@ -557,7 +623,7 @@
 				data-id="box-3"
 				class="w-[100px] h-[100px] bg-red-500 flex items-center justify-center rounded-full"
 			>
-				Component
+				.svelte
 			</div>
 		</div>
 	</Slide>
@@ -570,6 +636,12 @@
 				Complies
 			</div>
 		</div>
+		<Notes
+			>So Svelte is a complier that knows at build time or compile time in how thing could change in
+			the application instead of waiting to do the work during the runtime which is one of it's big
+			advantages. Svelte performs analysis on your code, which includes the components, or data used
+			in them.
+		</Notes>
 	</Slide>
 	<Slide id="boxes" animate>
 		<div class="flex gap-2 place-content-center">
@@ -609,6 +681,10 @@
 				<Domicon />
 			</div>
 		</div>
+		<Notes
+			>This means that Svelte knows exactly what needs to be updated in the DOM before the
+			application even runs.</Notes
+		>
 	</Slide>
 	<Slide animate>
 		<p class="text-red-500">Hello World</p>
@@ -859,27 +935,49 @@
 		><ul>
 			<li class="text-orange-600">Smaller Ecosystem</li>
 		</ul>
+		<Notes
+			>Svelte has a smaller ecosystem compared to more established frameworks like React or Vue.
+			This means that there are fewer pre-built libraries, components, and tools available for
+			Svelte. Developers may need to build more custom solutions or rely on fewer third-party
+			packages. Developers used to extensive debugging tools might find Svelte's tools lacking.</Notes
+		>
 	</Slide>
 	<Slide animate
 		><ul>
 			<li>Smaller Ecosystem</li>
 			<li class="text-orange-600">Lack of IDE Support</li>
 		</ul>
+		<Notes
+			>While Svelte has improved in terms of IDE support over the years, it may not have as
+			extensive support as other frameworks. For example, you might not find as many Svelte-specific
+			extensions or plugins for popular code editors as you would for other frameworks.</Notes
+		>
 	</Slide>
 	<Slide animate
 		><ul>
 			<li>Smaller Ecosystem</li>
 			<li>Lack of IDE Support</li>
-			<li class="text-orange-600">Lack of Dev Tools</li>
+			<li class="text-orange-600">Market Adoption</li>
 		</ul>
+		<Notes
+			>Svelte's adoption in the job market may not be as widespread as other frameworks. Depending
+			on your career goals, this could affect your job prospects or the demand for Svelte skills in
+			your region.</Notes
+		>
 	</Slide>
+	<Notes />
 	<Slide animate
 		><ul>
 			<li>Smaller Ecosystem</li>
 			<li>Lack of IDE Support</li>
-			<li>Lack of Dev Tools</li>
+			<li>Market Adoption</li>
 			<li class="text-orange-600">Smaller Community</li>
 		</ul>
+		<Notes
+			>Svelte has a smaller community compared to more established frameworks, which means there are
+			fewer resources available for learning, troubleshooting, and seeking help. Finding answers to
+			specific questions or getting community support may take longer.</Notes
+		>
 	</Slide>
 </Slide>
 <Slide>
